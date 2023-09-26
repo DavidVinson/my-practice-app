@@ -1,4 +1,3 @@
-import Link from "next/link";
 import { useRouter } from "next/router";
 import { DUMMY_DATA } from "@/dummy-data";
 import style from "../person/person.module.css";
@@ -20,9 +19,6 @@ function PersonPage(props) {
             </li>
           ))}
         </ul>
-      </div>
-      <div className={style.link}>
-        <Link href="/">Home Page</Link>
       </div>
     </div>
   );

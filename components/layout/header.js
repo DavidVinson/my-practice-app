@@ -1,24 +1,24 @@
-import Link from "next/link";
+import Button from "../ui/button";
 
 function Header(props) {
   return (
     <>
       <div>
-        <Link href="/">MY AWESOME APP</Link>
+        <Button link="/">MY AWESOME APP</Button>
       </div>
       <nav>
         <ul>
           <li>
             {" "}
-            <Link href="/person">Person Page</Link>
+            <Button link="/person">Person Page</Button>
           </li>
           <li>
             {" "}
-            <Link href="/safety-docs">Safety Docs Page</Link>
+            <Button link="/safety-docs">Safety Docs Page</Button>
           </li>
           <li>
             {" "}
-            <Link href="/training">Training Page</Link>
+            <Button link="/training">Training Page</Button>
           </li>
         </ul>
       </nav>

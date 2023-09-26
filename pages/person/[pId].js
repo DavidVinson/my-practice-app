@@ -1,6 +1,6 @@
 import { getPersonById } from "@/dummy-data";
 import { useRouter } from "next/router";
-import Link from "next/link";
+import Button from "@/components/ui/button";
 
 function PersonDetailPage(props) {
   const router = useRouter();
@@ -11,7 +11,7 @@ function PersonDetailPage(props) {
       <div>
         <h1>No Person Found!</h1>
         <div>
-          <Link href="/person">Back</Link>
+          <Button link="/person">Back</Button>
         </div>
       </div>
     );
@@ -20,7 +20,7 @@ function PersonDetailPage(props) {
     <div>
       <h1>{person.firstName} Detail Page </h1>
       <div>
-        <Link href="/person">Back to Person List</Link>
+        <Button link="/person">Back to Person List</Button>
       </div>
     </div>
   );
