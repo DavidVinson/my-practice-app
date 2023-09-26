@@ -1,0 +1,16 @@
+.person.content {
+  display: flex;
+  justify-content: center;
+}
+
+.link {
+  display: flex;
+  justify-content: center;
+  color: blue;
+  padding: 1.5rem;
+}
+
+.list {
+  display: flex;
+  justify-content: center;
+}
