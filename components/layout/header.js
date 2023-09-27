@@ -2,27 +2,31 @@ import Button from "../ui/button";
 
 function Header(props) {
   return (
-    <>
-      <div>
-        <Button link="/">MY AWESOME APP</Button>
+    <nav class="navbar" role="navigation">
+      <div class="navbar-brand">
+        <div class="navbar-item">
+          <Button link="/">NEXTJS</Button>
+        </div>
       </div>
-      <nav>
-        <ul>
-          <li>
-            {" "}
-            <Button link="/person">Person Page</Button>
-          </li>
-          <li>
-            {" "}
-            <Button link="/safety-docs">Safety Docs Page</Button>
-          </li>
-          <li>
-            {" "}
-            <Button link="/training">Training Page</Button>
-          </li>
-        </ul>
-      </nav>
-    </>
+
+      <div class="navbar-menu p-5">
+        <div class="navbar-start">
+          <div class="navbar-item">
+            <Button link="/">Home</Button>
+          </div>
+
+          <div class="navbar-item">
+            <Button link="/person">Person</Button>
+          </div>
+          <div class="navbar-item">
+            <Button link="/training">Training</Button>
+          </div>
+          <div class="navbar-item">
+            <Button link="/safety-docs">Safety Documentation</Button>
+          </div>
+        </div>
+      </div>
+    </nav>
   );
 }
 
